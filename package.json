@@ -1,0 +1,34 @@
+{
+  "name": "dlotw",
+  "version": "1.0.0",
+  "description": "Don't Look Out the Window",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rich-farr/DLOTW.git"
+  },
+  "keywords": [
+    "Weather"
+  ],
+  "author": "Rich & Ollie & Sean & Shayan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rich-farr/DLOTW/issues"
+  },
+  "homepage": "https://github.com/rich-farr/DLOTW#readme",
+  "devDependencies": {
+    "tap-spec": "^4.1.1",
+    "tape": "^4.5.1"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "handlebars": "^4.0.5"
+  }
+}
