@@ -33,6 +33,7 @@
     "handlebars": "^4.0.5",
     "hbs": "^4.0.0",
     "nodemon": "^1.9.2",
+    "superagent": "^2.0.0"
     "tape": "^4.5.1"
   }
 }
