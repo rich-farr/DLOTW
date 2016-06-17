@@ -1,7 +1,9 @@
 var express = require('express');
-
+var dotenv = require('dotenv');
 var path = require('path');
 var app = express();
+
+dotenv.load()
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -19,9 +21,17 @@ app.get('/', function(req, res) {
 })
 
 app.get('/weather', function (req, res) {
-	console.log('this i the paramas: ', req.query)
+	if (req.query.name === undefined) {
 	res.render('index')
+	} else {
+		var apiUrl = 'http://api.openweathermap.org/data/2.5/weather?q=' + req.query.name + '&units=metric&appid=' + process.env.WEATHER_API_KEY
+		console.log(apiUrl)
+	}
 	// res.send("Hello this is working :)")
+});
+
+app.get('/weather', function (req, res) {
+
 });
 
 // app.post('/weather', function (req, res) {
