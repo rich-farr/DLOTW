@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Karla:400,400italic);
+
 body {
   background-color: #61E294
 }
@@ -10,23 +13,26 @@ body {
 
 
 .title{
-  font-family: helvetica, sans-serif;
+  font-family: 'Lora', serif;
   margin-top: 10%;
 }
 
 input {
-  font-family: helvetica, sans-serif;
+  font-family: 'Karla', sans-serif;
   padding: 8px;
   font-size: 26px;
   margin: 30px 0;
   background-color: rgba(0,0,0,0.1);
   border: 0px;
+  border-radius: 20px;
 }
 
 .location-input {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .submit-btn {
+  font-size: 16px;
+  padding: 7px 15px;
 
 }
