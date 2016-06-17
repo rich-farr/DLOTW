@@ -1,4 +1,5 @@
 var express = require('express');
+var test = require('tape')
 
 var path = require('path');
 var app = express();
