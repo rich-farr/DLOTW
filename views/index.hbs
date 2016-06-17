@@ -19,14 +19,10 @@
 </form>
 
 
-  <h3 class="result-title">Todays Forecast: {{weatherObj.main}}</h3>
-  <p class="result-text">{{this.result}}</p>
-
-
-  <div class="result-div">
-    <h3 class="result-title">{{weatherObj.name}} forecast: {{weatherObj.main}}</h3>
+  <!-- <div class="result-div"> -->
+    <h3 class="result-title">{{weatherObj.name}} forecast: {{weatherObj.weather[0].main}}</h3>
     <p class="result-text">The City of {{weatherObj.name}} has a high temperature of {{weatherObj.main.temp}} with a {{weatherObj.description}}. Wind speeds are at {{weatherObj.speed}}. </p>
-  </div>
+  <!-- </div> -->
 
 </div>
 </body>
