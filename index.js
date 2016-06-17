@@ -23,7 +23,6 @@ app.get('/weather', function (req, res) {
 	// res.send("Hello this is working :)")
 });
 
-
 app.listen(3000, function () {
   console.log('Server is up nd running on localhost:3000!');
 });
