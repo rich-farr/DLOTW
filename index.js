@@ -19,9 +19,16 @@ app.get('/', function(req, res) {
 })
 
 app.get('/weather', function (req, res) {
+	console.log('this i the paramas: ', req.query)
 	res.render('index')
 	// res.send("Hello this is working :)")
 });
+
+// app.post('/weather', function (req, res) {
+// 	console.log('the request: ', req)
+// 	console.log('the response: ', res)
+
+// });
 
 app.listen(3000, function () {
   console.log('Server is up nd running on localhost:3000!');
