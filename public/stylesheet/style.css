@@ -3,22 +3,13 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic);
 @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600);
 
-.bg-image {
-  position: absolute;
-  top: -13px;
-  left: -15px;
-  z-index: 0;
+body {
+
 
   background-image: url('../images/cloudy.jpeg');
   width: 100%;
   height: 100%;
   margin: 0 auto;
-
-  -webkit-filter: blur(5px);
-  -moz-filter: blur(5px);
-  -o-filter: blur(5px);
-  -ms-filter: blur(5px);
-  filter: blur(5px);
 }
 
 .container {

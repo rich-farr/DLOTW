@@ -36,13 +36,14 @@ app.get('/weather', function (req, res) {
 			.end(function (err, response) {
 				if (!err) {
 					console.log('Rendering...')
-					weatherObj = response.text
+					weatherObj = {}
+					weatherObj = JSON.parse(response.text)
 					console.log(weatherObj)
 				} else {
 					console.log('You have an error: ', err)
 				}
 			})
-		res.render('index', weatherObj)
+		res.render('index', { weather: weatherObj })
 	}
 	// res.send("Hello this is working :)")
 });
